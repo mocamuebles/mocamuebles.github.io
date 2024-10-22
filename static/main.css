@@ -22,14 +22,32 @@ img, video, svg { height: auto; max-width: 100%; }
 body {
 	display: flex;
 	color: #ddd;
+	background: url(./img/background.jpg);
+	background-position: center center;
+	background-size: cover;
 }
 .main {
 	width: 100%;
-	background: #121212;
 }
 .middle {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	height: 100%;
+}
+.middle h1 {position: absolute;}
+.negative-indent{text-indent: -999999px;}
+.logo {
+	background: rgba(0,48,31,0.75);
+	height: 530px;
+	width: 750px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.logo img {
+	width: 70%;
+	margin: auto;
+	position: relative;
+	display: block;
 }
