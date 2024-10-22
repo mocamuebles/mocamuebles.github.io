@@ -18,3 +18,18 @@ img, video, svg { height: auto; max-width: 100%; }
         transition: none;
     }
 }
+
+body {
+	display: flex;
+	color: #ddd;
+}
+.main {
+	width: 100%;
+	background: #121212;
+}
+.middle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
