@@ -44,10 +44,19 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	max-width: 90vw;
+	max-height: 85vh;
 }
 .logo img {
 	width: 70%;
 	margin: auto;
 	position: relative;
 	display: block;
+}
+
+.darker-grotesque-medium {
+  font-family: "Darker Grotesque", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
