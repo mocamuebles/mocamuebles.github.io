@@ -1,0 +1,29 @@
+---
+const frases = [
+    "Madera recuperada, la mejor opción para muebles únicos",
+    "Diseñamos y fabricamos muebles de estilo industrial, combinando hierro y madera para crear piezas con personalidad",
+    "Tus proyectos en las mejores manos",
+];
+const idx = Math.floor(Math.random() * frases.length);
+
+---
+<div class="frase darker-grotesque-medium" id="frase">
+    <p>{frases[idx]}</p>
+</div>
+
+<style>
+.darker-grotesque-medium {
+  font-family: "Darker Grotesque", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.frase {
+	position: absolute;
+	width: 70%;
+	bottom: 10%;
+	font-size: 1.5rem;
+	min-height: 100px;
+	color:#ffe4d2
+}
+</style>

@@ -1,0 +1,51 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Frase from "../components/Frase.astro";
+import HiddenText from "../components/HiddenText.astro";
+---
+
+<Layout title="MOCA Muebles">
+	<main>
+		<div class="middle">
+			<HiddenText>
+				<h1>MOCA</h1>
+				<h2>
+					Muebles de estilo industrial, combinando hierro y madera para
+					crear piezas con personalidad
+				</h2>
+			</HiddenText>
+
+			<div class="logo">
+				<img src="./img/moca_logo.svg" alt="MOCA Muebles logo" />
+				<Frase />
+			</div>
+
+		</div>
+	</main>
+</Layout>
+
+<style>
+	main {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+	.logo {
+		background: rgba(0, 48, 31, 0.75);
+		height: 530px;
+		width: 750px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		max-width: 90vw;
+		max-height: 85vh;
+		position: relative;
+	}
+	.logo img {
+		width: 70%;
+		margin: auto;
+		position: relative;
+		display: block;
+	}
+</style>
