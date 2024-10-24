@@ -36,6 +36,7 @@ body {
 	height: 100%;
 }
 .middle h1 {position: absolute;}
+.middle h2 {position: absolute;}
 .negative-indent{text-indent: -999999px;}
 .logo {
 	background: rgba(0,48,31,0.75);
