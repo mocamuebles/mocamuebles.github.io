@@ -1,0 +1,39 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { getCollection, render } from "astro:content";
+
+export async function getStaticPaths() {
+	const prods = await getCollection("products");
+
+	return prods.map((prod) => ({
+		params: { id: prod.slug },
+		props: { prod },
+	}));
+}
+
+const { prod } = Astro.props;
+const { data, slug } = prod;
+const { name, description, img, category } = data;
+
+const { Content } = await render(prod);
+
+export const prerender = true;
+---
+
+<Layout title={`${name} :: MOCA MUEBLES`}>
+	<main class="darker-grotesque-medium">
+		<h1>{name}</h1>
+		<p>{description}</p>
+		<img src={`/img/p/${img}`} alt={name} />
+		<Content />
+	</main>
+</Layout>
+
+<style>
+	main {
+		position: relative;
+		max-width: 940px;
+		padding: 0 1rem;
+		margin: auto;
+	}
+</style>

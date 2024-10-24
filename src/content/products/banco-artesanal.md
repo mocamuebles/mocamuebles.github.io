@@ -7,7 +7,6 @@ category:
     - Hierro recuperado
 
 ---
-## Banco Artesanal
 
 **Un banco único, creado a mano con materiales recuperados para los amantes de lo auténtico y sostenible.**
 
