@@ -1,11 +1,10 @@
 ---
-const frases = [
+const frases: string[] = [
     "Madera recuperada, la mejor opción para muebles únicos",
     "Diseñamos y fabricamos muebles de estilo industrial, combinando hierro y madera para crear piezas con personalidad",
     "Tus proyectos en las mejores manos",
 ];
-const idx = Math.floor(Math.random() * frases.length);
-
+const idx: number = Math.floor(Math.random() * frases.length);
 ---
 <div class="frase darker-grotesque-medium" id="frase">
     <p>{frases[idx]}</p>
