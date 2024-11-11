@@ -1,4 +1,19 @@
 ---
+// const frases: string[] = [
+//     "Madera recuperada, la mejor opción para muebles únicos",
+//     "Diseñamos y fabricamos muebles de estilo industrial, combinando hierro y madera para crear piezas con personalidad",
+//     "Tus proyectos en las mejores manos",
+//     "Muebles con alma, hechos a mano y con amor por el planeta",
+//     "Hierro y madera con una segunda vida. Tu hogar, más sostenible",
+//     "Cada pieza, una historia única",
+//     "Nuestros muebles, hechos con hierro reciclado y madera recuperada, son un compromiso con un futuro más sostenible",
+//     "Descubre la belleza de lo auténtico y sostenible",
+//     "Elige un mueble hecho a mano y siente la diferencia",
+// ];
+// const idx: number = Math.floor(Math.random() * frases.length);
+---
+<script>
+
 const frases: string[] = [
     "Madera recuperada, la mejor opción para muebles únicos",
     "Diseñamos y fabricamos muebles de estilo industrial, combinando hierro y madera para crear piezas con personalidad",
@@ -11,9 +26,14 @@ const frases: string[] = [
     "Elige un mueble hecho a mano y siente la diferencia",
 ];
 const idx: number = Math.floor(Math.random() * frases.length);
----
+
+const p = document.querySelector('#frase p')!;
+p.textContent = frases[idx];
+
+</script>
+
 <div class="frase darker-grotesque-medium" id="frase">
-    <p>{frases[idx]}</p>
+    <p></p>
 </div>
 
 <style>
